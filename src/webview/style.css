@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--vscode-font-family);
+  font-size: var(--vscode-font-size);
+  color: var(--vscode-foreground);
+  padding: 0.5em 0.75em;
+  margin: 0;
+}
+h2 {
+  font-size: 1em;
+  margin: 0 0 0.5em 0;
+  font-weight: 600;
+}
+h3 {
+  font-size: 0.95em;
+  margin: 0 0 0.5em 0;
+  font-weight: 600;
+}
+.list-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-panel li {
+  margin: 0.25em 0;
+}
+.list-panel a {
+  color: var(--vscode-textLink-foreground);
+  text-decoration: none;
+}
+.list-panel a:hover {
+  text-decoration: underline;
+}
+.muted {
+  color: var(--vscode-descriptionForeground);
+  font-size: 0.9em;
+}
+.form-panel {
+  margin-top: 1em;
+  border-top: 1px solid var(--vscode-widget-border);
+  padding-top: 0.75em;
+}
+.question-block {
+  margin-bottom: 1em;
+}
+.question-body {
+  background: var(--vscode-textBlockQuote-background);
+  border-left: 3px solid var(--vscode-textBlockQuote-border);
+  padding: 0.5em 0.75em;
+  margin: 0.5em 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+.question-body code {
+  background: var(--vscode-textCodeBlock-background);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+.answer-block label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-weight: 500;
+}
+.answer-block textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: inherit;
+  background: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 2px;
+  resize: vertical;
+  min-height: 120px;
+}
+.answer-block textarea:focus {
+  outline: 1px solid var(--vscode-focusBorder);
+}
+#save-btn {
+  margin-top: 0.5em;
+  padding: 0.4em 1em;
+  background: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: inherit;
+}
+#save-btn:hover {
+  background: var(--vscode-button-hoverBackground);
+}
