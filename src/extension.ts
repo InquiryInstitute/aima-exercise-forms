@@ -25,6 +25,13 @@ export function activate(context: vscode.ExtensionContext) {
       vscode.commands.executeCommand('aimaExerciseForms.panel.focus');
     })
   );
+
+  const openOnStartup = vscode.workspace.getConfiguration('aimaExerciseForms').get<boolean>('openOnStartup');
+  if (openOnStartup) {
+    setTimeout(() => {
+      vscode.commands.executeCommand('aimaExerciseForms.open');
+    }, 500);
+  }
 }
 
 function getConfig() {
